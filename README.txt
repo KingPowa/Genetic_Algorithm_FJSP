@@ -1,8 +1,7 @@
-Per eseguire:
+To execute, uses the declared function in ga_handler
 
-Da test.py, il primo parametro di
-
-handler.run(param1, param2)
-
-Param 1 = Numero di cromosomi nella popolazione
-Param 2 = Numero di generazioni
+handler = GAHandler(problem) # Creates a handler for the problem
+handler.runConditional(number_of_individuals, num_of_generations, iterations, max_reachable) # For executing Conditional
+handler.runBroad(number_of_individuals, num_of_generations, iterations, max_reachable) # For executing Broad
+handler.runMixed1(number_of_individuals, num_of_generations, iterations, max_reachable) # For executing a specific algorithm for MK01
+handler.runMixed2(number_of_individuals, num_of_generations, iterations, max_reachable) # For executing a specific algorithm for MK02
